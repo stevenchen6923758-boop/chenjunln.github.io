@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craigslist Redesign | Local Classifieds</title>
+    <style>
+        /* Base Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        :root {
+            --primary: #2385bb;
+            --dark: #34495e;
+            --light: #f8f9fa;
+            --accent: #e74c3c;
+            --text: #222;
+            --bg: #fff;
+        }
+        body { background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header & Navigation */
+        header { background: var(--primary); color: white; padding: 1rem 0; }
+        .header-wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-weight: 500; }
+        nav a:hover { text-decoration: underline; }
+
+        /* Search Section */
+        .search { background: var(--light); padding: 2rem 0; text-align: center; }
+        .search h2 { margin-bottom: 1rem; color: var(--dark); }
+        .search-bar { display: flex; max-width: 700px; margin: 0 auto; gap: 0.5rem; flex-wrap: wrap; }
+        .search-bar input { flex: 1; padding: 0.8rem; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; min-width: 200px; }
+        .search-bar button { padding: 0.8rem 1.5rem; background: var(--primary); color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+        .search-bar button:hover { background: #1a6b96; }
+
+        /* Categories */
+        .categories { padding: 2.5rem 0; }
+        .categories h2 { text-align: center; margin-bottom: 2rem; color: var(--dark); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .card { background: var(--light); padding: 1.5rem; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .card h3 { margin-bottom: 0.8rem; color: var(--primary); }
+        .card ul { list-style: none; }
+        .card li { margin: 0.4rem 0; }
+        .card a { color: var(--dark); text-decoration: none; }
+        .card a:hover { color: var(--primary); }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; padding: 1.5rem 0; text-align: center; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrap">
+            <div class="logo">Craigslist</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Post Ad</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="container">
+            <h2>Find what you need locally</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search jobs, housing, goods...">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories container">
+        <h2>Browse Categories</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Housing</h3>
+                <ul>
+                    <li><a href="#">Apartments / Housing</a></li>
+                    <li><a href="#">Rooms / Shared</a></li>
+                    <li><a href="#">Sublets / Temporary</a></li>
+                    <li><a href="#">Real Estate</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>For Sale</h3>
+                <ul>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                    <li><a href="#">Household</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Jobs</h3>
+                <ul>
+                    <li><a href="#">Full-time</a></li>
+                    <li><a href="#">Part-time</a></li>
+                    <li><a href="#">Freelance</a></li>
+                    <li><a href="#">Internships</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Home & Garden</a></li>
+                    <li><a href="#">Automotive</a></li>
+                    <li><a href="#">Lessons & Training</a></li>
+                    <li><a href="#">Computer / Tech</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Craigslist Redesign Proposal | ICT2215 Assignment</p>
+        </div>
+    </footer>
+</body>
+</html>
